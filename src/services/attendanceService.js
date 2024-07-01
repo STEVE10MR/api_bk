@@ -17,7 +17,7 @@ export const listarAttendanceService = async (body,query,popOptions)=>{
     let filter= undefined
     if(body) filter = {...body}
     
-    const data=await attendanceRepository.listaAttendance(filter,query,popOptions)
+    const data=await attendanceRepository.listaAttendance(filter,query,"student_id")
   
     return data 
 }
