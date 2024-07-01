@@ -3,7 +3,7 @@ import * as attendanceController from '../controllers/attendanceController.js';
 import authRole from '../middleware/authRole.js';
 import authMiddleware from '../middleware/authMiddleware.js';
 
-const router = express.Router()
+const router = express.Router({ mergeParams: true })
 
 router.use(authMiddleware)
 
