@@ -42,5 +42,5 @@ router.route('/:id/quitar-horario-tiempo')
 .patch(classController.quitarSubHorarioClase)
 
 router.use('/:id/asistencia',attendanceRoute)
-
+router.use('/test',attendanceRoute)
 export default router
