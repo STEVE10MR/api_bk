@@ -26,8 +26,8 @@ const deleteImageTemp =async function(req){
 
 
 export const listarAsistencia = catchAsync(async (req,res,next)=>{
-  let {idClass} = req.params
-  let filter = {class_id:idClass,...req.body}
+  let {id} = req.params
+  let filter = {class_id:id,...req.body}
 
   const data=await attendanceService.listarAttendanceService(filter,req.query)
 

@@ -1,5 +1,5 @@
 import * as classRepository from "../repositories/classRepository.js"
-import * as studentservice from "../services/studentservice.js"
+//import * as studentservice from "../services/studentservice.js"
 import * as attendanceService from "../services/attendanceService.js"
 import mongoose from "mongoose"
 
